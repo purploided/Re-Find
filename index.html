@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="icon" type="image/x-icon" href="@Extras/goggleicon.png"></link>
+        <title id="goggletitle">Goggle</title>
+    </head>
+    <body class="body">
+        <input id="search" class="search"></input>
+        <img src="@Extras/goggle.png" class="goggle"></img>
+        <div id="searchdiv" class="searchdiv"></div>
+
+        <script>
+            search.addEventListener("keyup", function (event) { // thanks to geeksforgeeks for this code :))
+
+            if (event.keyCode == 13) {
+                relocate();
+            }
+        });
+        </script>
+        
+        <div class="buttons">
+            <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
+        </div>
+    </body>
+
+    <script src="@JS/search.js"></script>
+    <script src="@JS/pop.js"></script>
+</html>
