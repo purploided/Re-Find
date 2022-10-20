@@ -52,3 +52,10 @@
     
     z-index: 1;
 }
+.wip {
+    font-family: Comic Sans MS;
+    text-align: center;
+    margin-top: 10%;
+
+    font-size: 80px;
+}
