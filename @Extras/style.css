@@ -1,0 +1,69 @@
+.search {
+    height: 40px;
+    width: 40%;
+
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 300px;
+
+    border-radius: 100px;
+    border-color: #302f2f;
+    background-color: #202124;
+    border-style:solid;
+
+    color:aliceblue;
+
+    z-index: 1;
+}
+.search:focus {outline:none;}
+.goggle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.body {
+    background-color: #202124;
+}
+.feelinlucky {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    margin: auto;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.buttons {
+    display: grid;
+    
+    z-index: 1;
+}
+.wip {
+    font-family: Comic Sans MS;
+    text-align: center;
+    margin-top: 10%;
+
+    font-size: 80px;
+}
+.goggletm {
+    font-family: Comic Sans MS;
+    color: #e8eaed;
+
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+}
