@@ -1,9 +1,22 @@
 function relocate() {
     try {
-        let searching = document.getElementById("search")
+        let searching = document.getElementById("search");
         let title = document.getElementById("goggletitle");
-        title.innerHTML = searching.value + " - Goggle Search";
-        setTimeout(() => {window.location.replace("https://www.google.com/search?q=" + searching.value);}, 350);
+
+        if (searching.value == "3b1dc0873ab7c0eac07a5a68fe1fdd7a17449958409fd87c5754a99a2d0e2f0fa4246be41ee914206e7980ddeca2dc312710") {
+            title.innerHTML = searching.value + " - Goggle Search";
+
+            window.location.replace("./@Extras/god.html");
+        }
+        else if (searching.value == "Google", "google") {
+            title.innerHTML = searching.value + " - Goggle Search";
+
+            window.location.replace("./@Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
+        }
+        else {
+            title.innerHTML = searching.value + " - Goggle Search";
+            setTimeout(() => {window.location.replace("https://www.google.com/search?q=" + searching.value);}, 350);
+        }
     }
     catch(err) {
         window.location.replace("./@Error/error.html");

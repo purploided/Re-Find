@@ -59,3 +59,11 @@
 
     font-size: 80px;
 }
+.goggletm {
+    font-family: Comic Sans MS;
+    color: #e8eaed;
+
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+}
