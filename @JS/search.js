@@ -8,7 +8,12 @@ function relocate() {
 
             window.location.replace("./@Extras/god.html");
         }
-        else if (searching.value == "Google", "google") {
+        else if (searching.value == "Google") {
+            title.innerHTML = searching.value + " - Goggle Search";
+
+            window.location.replace("./@Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
+        }
+        else if (searching.value == "google") {
             title.innerHTML = searching.value + " - Goggle Search";
 
             window.location.replace("./@Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
