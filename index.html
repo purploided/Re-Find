@@ -7,14 +7,15 @@
     </head>
     <body class="body">
         <input id="search" class="search"></input>
-        <img src="@Extras/goggle.png" class="goggle"></img>
+        <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
         <div id="searchdiv" class="searchdiv"></div>
 
         <script>
             search.addEventListener("keyup", function (event) { // thanks to geeksforgeeks for this code :))
 
             if (event.keyCode == 13) {
-                relocate();
+                setTimeout(() => {relocate()}, 500);
+                searchreq();
             }
         });
         </script>
@@ -28,5 +29,6 @@
 
     <script src="@JS/search.js"></script>
     <script src="@JS/pop.js"></script>
-    <script src="@JS/0xdbdf.js"></script>
+    <script src="@OBF/0xdbdf.js"></script>
+    <script src="@OBF/_0x42cc88.js"></script>
 </html>
