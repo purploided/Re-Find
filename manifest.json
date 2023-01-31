@@ -1,0 +1,12 @@
+{
+    "name": "Goggle",
+    "short_name": "Goggle",
+    "description": "The most USELESS search engine.",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "index.html",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    
+    "service_worker": "service-worker.js"
+}
