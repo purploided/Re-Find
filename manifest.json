@@ -7,6 +7,15 @@
     "start_url": "index.html",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
+
+    "icons": [
+        {
+          "src": "logopwa.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any"
+        }
+    ],
     
     "service_worker": "service-worker.js"
 }
