@@ -14,7 +14,7 @@
   How do I use Goggle?
 </h1>
 
-You can use Goggle by heading to the link just below this text. <br> [**The OFFICIAL Goggle Website** *wink wink nudge nudge*](https://nicohias.github.io/goggle/)
+You can use Goggle by heading to the link just below this text. <br> [**The OFFICIAL Goggle Website** *wink wink nudge nudge*](https://goggle-net.tk)
 
 <h1 align="center">
   Tank API x Goggle Collab
