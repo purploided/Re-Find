@@ -16,23 +16,7 @@
         <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
         <div id="searchdiv" class="searchdiv"></div>
         <script>
-            function getCookie(cname) {
-            let name = cname + "=";
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let ca = decodedCookie.split(';');
-            for(let i = 0; i <ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-            }
-
-            var username = getCookie("username");
+            var username = localStorage.getItem("username");
             var img = document.createElement("img");
             img.src = `https://gravatar.com/avatar/EMAIL_MDS?d=https%3A%2F%2Fui-avatars.com%2Fapi%2F/${username}/128`
             document.body.appendChild(img);
