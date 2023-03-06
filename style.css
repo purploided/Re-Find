@@ -54,8 +54,8 @@
     font-family: Comic Sans MS;
     color: #e8eaed;
 
-    position: absolute;
-    top: 0;
-    margin-left: 1220px;
+    margin-top: -300px;
+    text-align:right;
     text-decoration: none;
+    cursor: pointer;
 }
