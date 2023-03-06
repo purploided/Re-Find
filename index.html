@@ -14,11 +14,18 @@
         <meta content="Goggle is literally the most useless search engine" property="og:description" />
         <meta content="https://www.goggle-net.tk/" property="og:url" />
         <meta content="@Extras/goggleicon.png" property="og:image" />
+        <script async src="https://cse.google.com/cse.js?cx=257fd314222af4ffd"></script>
     </head>
     <body class="body">
-        <input id="search" class="search"></input>
+        <div class="gcse-search" id="search"></div>
         <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
         <div id="searchdiv" class="searchdiv"></div>
+        <style>
+            .gsc-results {
+                background-color: #202124;
+                width: auto;
+            }
+        </style>
         <script>
             var username = localStorage.getItem("username");
             var img = document.createElement("img");
@@ -62,8 +69,6 @@
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </body>
 
-    <script src="@JS/search.js"></script>
-    <script src="@JS/pop.js"></script>
     <script src="@OBF/0xdbdf.js"></script>
     <script src="pop-bang.js"></script>
 </html>

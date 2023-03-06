@@ -1,4 +1,4 @@
-.search {
+#search {
     height: 40px;
     width: 40%;
 
@@ -7,17 +7,8 @@
     margin-left: auto;
     margin-right: auto;
     top: 300px;
-
-    border-radius: 100px;
-    border-color: #302f2f;
-    background-color: #202124;
-    border-style:solid;
-
-    color:aliceblue;
-
-    z-index: 1;
 }
-.search:focus {outline:none;}
+#search:focus {outline:none;}
 .goggle {
     display: block;
     margin-left: auto;
@@ -64,6 +55,7 @@
     color: #e8eaed;
 
     position: absolute;
-    bottom: 0;
+    top: 0;
+    margin-left: 1220px;
     text-decoration: none;
 }
