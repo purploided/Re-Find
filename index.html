@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css"></link>
-        <link rel="icon" type="image/x-icon" href="goggleicon.png"></link>
+        <link rel="icon" type="image/x-icon" href="@Extras/goggleicon.png"></link>
         <title id="goggletitle">Goggle</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#000000">
@@ -13,11 +13,11 @@
         <meta content="Goggle - The Most Useless Seach Engine" property="og:title" />
         <meta content="Goggle is literally the most useless search engine" property="og:description" />
         <meta content="https://www.goggle-net.tk/" property="og:url" />
-        <meta content="Extras/goggleicon.png" property="og:image" />
+        <meta content="@Extras/goggleicon.png" property="og:image" />
     </head>
     <body class="body">
         <input id="search" class="search"></input>
-        <img src="goggle.png" class="goggle" id="goggle"></img>
+        <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
         <div id="searchdiv" class="searchdiv"></div>
         <script>
             var username = localStorage.getItem("username");
@@ -32,7 +32,7 @@
             img.style.cursor = "pointer";
 
             img.addEventListener("click", function() {
-                window.location.assign("Extras/login/form.html")
+                window.location.assign("@Extras/login/form.html")
             });
         </script>
 

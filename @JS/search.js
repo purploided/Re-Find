@@ -6,17 +6,17 @@ function relocate() {
         if (searching.value == "3b1dc0873ab7c0eac07a5a68fe1fdd7a17449958409fd87c5754a99a2d0e2f0fa4246be41ee914206e7980ddeca2dc312710") {
             title.innerHTML = searching.value + " - Goggle Search";
 
-            window.location.assign("./Extras/god.html");
+            window.location.assign("./@Extras/god.html");
         }
         else if (searching.value == "Google") {
             title.innerHTML = searching.value + " - Goggle Search";
 
-            window.location.assign("./Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
+            window.location.assign("./@Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
         }
         else if (searching.value == "google") {
             title.innerHTML = searching.value + " - Goggle Search";
 
-            window.location.assign("./Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
+            window.location.assign("./@Extras/NO THIS IS GOGGLE/nothisisgoggle.html");
         }
         else {
             title.innerHTML = searching.value + " - Goggle Search";
