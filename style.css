@@ -61,3 +61,21 @@
     text-decoration: none;
     cursor: pointer;
 }
+.popup {
+	width:450px;
+	height:100px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #292929;
+    position:absolute;
+    top: -50%;
+    left: 50%;
+    transition: all 1s;
+    transform: translate(-50%, 0%);
+    border-radius: 25px;
+}
+
+.popup {
+    font-family: Comic Sans MS;
+    color: #5f5f5f;
+}
