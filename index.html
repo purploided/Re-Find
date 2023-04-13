@@ -17,72 +17,118 @@
         <script async src="https://cse.google.com/cse.js?cx=257fd314222af4ffd"></script>
     </head>
     <body class="body">
-        <div class="gcse-search" id="search"></div>
-        <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
-        <div id="searchdiv" class="searchdiv"></div>
-        <style>
-            .gsc-results {
-                background-color: #202124;
-                width: auto;
-            }
-            #search {
-                height: 40px;
-                width: 40%;
-
-                position: relative;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                top: 300px;
-            }
-            #search:focus {outline:none;}
-        </style>
-        <script>
-            var username = localStorage.getItem("username");
-            var img = document.createElement("img");
-            img.src = `https://api.dicebear.com/6.x/pixel-art/svg?seed=${username}`
-            document.body.appendChild(img);
-
-            img.style.position = "absolute";
-            img.style.top = "10px";
-            img.style.borderRadius = "50%";
-            img.style.width = "50px";
-            img.style.cursor = "pointer";
-
-            img.addEventListener("click", function() {
-                window.location.assign("@Extras/login/form.html")
+        <div class="goggleOne" id="goggleOne">
+            <div class="gcse-search" id="search"></div>
+            <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
+            <div id="searchdiv" class="searchdiv"></div>
+            <style>
+                .gsc-results {
+                    background-color: #202124;
+                    width: auto;
+                }
+                #search {
+                    height: 40px;
+                    width: 40%;
+    
+                    position: relative;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    top: 300px;
+                }
+                #search:focus {outline:none;}
+            </style>
+            <script>
+                var username = localStorage.getItem("username");
+                var img = document.createElement("img");
+                img.src = `https://api.dicebear.com/6.x/pixel-art/svg?seed=${username}`
+                document.body.appendChild(img);
+    
+                img.style.position = "absolute";
+                img.style.top = "10px";
+                img.style.borderRadius = "50%";
+                img.style.width = "50px";
+                img.style.cursor = "pointer";
+    
+                img.addEventListener("click", function() {
+                    window.location.assign("@Extras/login/form.html")
+                });
+            </script>
+    
+            <script>
+                search.addEventListener("keyup", function (event) { // thanks to geeksforgeeks for this code :))
+    
+                if (event.keyCode == 13) {
+                    setTimeout(() => {relocate()}, 500);
+                }
             });
-        </script>
-
-        <script>
-            search.addEventListener("keyup", function (event) { // thanks to geeksforgeeks for this code :))
-
-            if (event.keyCode == 13) {
-                setTimeout(() => {relocate()}, 500);
-            }
-        });
-        </script>
-
-        <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('service-worker.js');
-            }
-        </script>
+            </script>
+    
+            <script>
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('service-worker.js');
+                }
+            </script>
+            
+            <div class="buttons">
+                <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
+            </div>
+    
+            <p onclick="window.location.assign('https://twitter.com/GoggleNet');" id="goggletm" class="goggletm">Goggle™</p>
+    
+            <!-- 100% privacy friendly analytics -->
+            <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+            <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    
+            <div class="popup" id="popup">
+                <h2 class="popupmsg"></h2>
+            </div>
+        </div>
         
-        <div class="buttons">
-            <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
-        </div>
-
-        <p onclick="window.location.assign('https://twitter.com/GoggleNet');" id="goggletm" class="goggletm">Goggle™</p>
-
-        <!-- 100% privacy friendly analytics -->
-        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-
-        <div class="popup" id="popup">
-            <h2 class="popupmsg"></h2>
-        </div>
     </body>
+
+    <div class="offlinegame" id="offlinegame">
+        <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
+        <h1 class="oops">
+            Oops! You're offline.
+    
+            Play this epic clicker game instead.
+        </h1>
+
+        <center>
+            <h1>Score: <span id="scoreSpan"></span></h1>
+
+                <button id="btn2">
+                    
+                </button>
+        </center>
+    </div>
+
+    <script>
+        var counter = 0;
+        var btn2 = document.getElementById("btn2");
+
+        btn2.addEventListener('click', function() {
+            counter++;
+            document.getElementById("scoreSpan").innerHTML = counter;            
+        });
+    </script>
+
+    <style>
+        #btn2 {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+
+            font-family: Comic Sans MS;
+            background-color: red;
+            border-color: black;
+            border-width: 10px;
+
+            cursor: pointer;
+            
+        }
+    </style>
 
     <script src="@OBF/0xdbdf.js"></script>
     <script src="pop-bang.js"></script>

@@ -51,3 +51,32 @@ function popup() {
 const debug = { ForcePopup() { popup(); }, };
 
 setInterval(() => {popup();}, 120000);
+
+/*
+    time to add chrome dinosaur game, minus the google part
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    OFFLINE!!
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+function updateStatus() {
+    if(navigator.onLine) {
+        var goggleOne = document.getElementById("goggleOne");
+        var offlineDive = document.getElementById("offlinegame");
+
+        goggleOne.style.display = "block";
+        offlineDive.style.display = "none";
+    }
+    else {
+        var goggleOne = document.getElementById("goggleOne");
+        var offlineDive = document.getElementById("offlinegame");
+
+        goggleOne.style.display = "none";
+        offlineDive.style.display = "block";
+    }
+}
+
+setInterval(() => {updateStatus();}, 2500);
