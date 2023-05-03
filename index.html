@@ -16,14 +16,14 @@
         <meta content="@Extras/goggleicon.png" property="og:image" />
         <script async src="https://cse.google.com/cse.js?cx=257fd314222af4ffd"></script>
     </head>
-    <body class="body">
+    <body class="body" id="body">
         <div class="goggleOne" id="goggleOne">
             <div class="gcse-search" id="search"></div>
             <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
             <div id="searchdiv" class="searchdiv"></div>
             <style>
                 .gsc-results {
-                    background-color: #202124;
+                    background-color: #20212400;
                     width: auto;
                 }
                 #search {
@@ -35,9 +35,36 @@
                     margin-left: auto;
                     margin-right: auto;
                     top: 300px;
+
+                    background-color: #20212400;
+                }
+
+                .gsc-control-cse {
+                    border-color: #20212400;
+                    background-color: #20212400;
+                }
+                .styleable-rootcontainer {
+                    font-family: arial,sans-serif,arial,sans-serif;
+                    font-size: 13px;
+                    padding-bottom: 6px;
+                    padding-left: 4px;
+                    padding-top: 6px;
+                    color: #EEEEEE;
+                    width: 100%;
+                    -ms-flex-negative: 1;
+                    -webkit-box-flex: 1 0;
+                    -webkit-flex-shrink: 1;
+                    flex-shrink: 1;
+                }
+                .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+	                border-color: #20212400;
+                    background-color: #20212400;
                 }
                 #search:focus {outline:none;}
             </style>
+            <button class="themeimp" onclick="JSON_IMPORTER()">Import Themes</button>
+            <button class="themeexp" id="export-btn">Theme Editor</button>
+
             <script>
                 var username = localStorage.getItem("username");
                 var img = document.createElement("img");
