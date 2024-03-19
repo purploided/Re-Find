@@ -2,24 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css"></link>
-        <link rel="icon" type="image/x-icon" href="@Extras/goggleicon.png"></link>
-        <title id="goggletitle">Goggle</title>
+        <link rel="icon" type="image/x-icon" href="@Extras/reupmini.png"></link>
+        <title id="goggletitle">Re-Find</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#000000">
         <meta name="msapplication-navbutton-color" content="#000000">
-        <meta name="description" content="Goggle">
+        <meta name="description" content="Re-Find">
         <meta name="start_url" content="/index.html">
         <link rel="manifest" href="manifest.json" />
-        <meta content="Goggle - The Most Useless Seach Engine" property="og:title" />
-        <meta content="Goggle is literally the most useless search engine" property="og:description" />
-        <meta content="https://www.goggle-net.tk/" property="og:url" />
-        <meta content="@Extras/goggleicon.png" property="og:image" />
+        <meta content="Re-Find - The Most Findable Search Engine" property="og:title" />
+        <meta content="Re-Find is the most findable search engine" property="og:description" />
+        <meta content="https://nicohlasdev.github.io/Re-Find/" property="og:url" />
+        <meta content="@Extras/reupmini.png" property="og:image" />
         <script async src="https://cse.google.com/cse.js?cx=257fd314222af4ffd"></script>
     </head>
     <body class="body" id="body">
         <div class="goggleOne" id="goggleOne">
             <div class="gcse-search" id="search"></div>
-            <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
+            <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
             <div id="searchdiv" class="searchdiv"></div>
             <style>
                 .gsc-results {
@@ -37,6 +37,7 @@
                     top: 300px;
 
                     background-color: #20212400;
+                    
                 }
 
                 .gsc-control-cse {
@@ -55,14 +56,33 @@
                     -webkit-box-flex: 1 0;
                     -webkit-flex-shrink: 1;
                     flex-shrink: 1;
+                    border-radius: 10%;
                 }
                 .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
 	                border-color: #20212400;
-                    background-color: #20212400;
-                }
+                    background-color: #20212400;                }
                 #search:focus {outline:none;}
+
+                .gsc-search-button-v2 {
+                    font-size: 0;
+                    padding: 10px;
+                    width: auto;
+                    vertical-align: middle;
+                    border: 1px solid #000;
+                    border-radius: 2px;
+                    margin-top: 2px;
+                    border-color: #000;
+                    background-color: #333;
+                    background-image: linear-gradient(top, #333, #333);
+                }
+
+                .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+	                color: #ffffff;
+                }
+                .gs-webResult div.gs-visibleUrl {
+                    color: #ffffff;
+                }
             </style>
-            <button class="themeexp" id="export-btn">Theme Editor</button>
 
             <script>
                 var username = localStorage.getItem("username");
@@ -100,9 +120,6 @@
                 <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
             </div>
     
-            <p onclick="window.location.assign('https://twitter.com/GoggleNet');" id="goggletm" class="goggletm">Goggle™</p>
-            <p class="themeimp" onclick="JSON_IMPORTER()">Import Themes</button></p>
-    
             <!-- 100% privacy friendly analytics -->
             <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
             <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
@@ -115,7 +132,7 @@
     </body>
 
     <div class="offlinegame" id="offlinegame">
-        <img src="@Extras/goggle.png" class="goggle" id="goggle"></img>
+        <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
         <h1 class="oops">
             Oops! You're offline.
     

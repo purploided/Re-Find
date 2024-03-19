@@ -13,11 +13,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-    max-width: 100%;
+    max-width: 25%;
+    width: 30%; /* Set a fixed width */
+    position: absolute; /* Position it relative to the viewport */
+    left: 50%; /* Place it at the horizontal center of the viewport */
+    top: 15%; /* Place it at the vertical center of the viewport */
+    transform: translate(-50%, -50%); /* Adjust to center properly */
 }
 .body {
-    background-color: #202124;
+    background-color: #181818;
 }
 .themeimp {
     font-family: Comic Sans MS;
