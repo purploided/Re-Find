@@ -10,7 +10,7 @@
   How do I use Re-Find?
 </h1>
 
-You can use Re-Find by heading to the link just below this text. <br> [**The OFFICIAL Re-Find Website** *wink wink nudge nudge*]([https://goggle-net.tk](https://nicohlasdev.github.io/Re-Find/))
+You can use Re-Find by heading to the link just below this text. <br> [**The OFFICIAL Re-Find Website** *wink wink nudge nudge*](https://nicohlasdev.github.io/Re-Find/)
 
 <h1 align="center">
   Tank API x Re-Find Collab
