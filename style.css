@@ -1,25 +1,40 @@
 #search {
-    height: 40px;
-    width: 40%;
-
-    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 300px;
+    width: 400px;
+    max-width: 800px;
+    position: fixed; 
+    left: 50px;
+    top: 15%; 
 }
 #search:focus {outline:none;}
 .goggle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 25%;
-    width: 30%; /* Set a fixed width */
-    position: absolute; /* Position it relative to the viewport */
-    left: 50%; /* Place it at the horizontal center of the viewport */
-    top: 15%; /* Place it at the vertical center of the viewport */
-    transform: translate(-50%, -50%); /* Adjust to center properly */
+    max-width: 500px; 
+    position: fixed; 
+    left: calc(50% - 200px);
+    top: 150px; 
 }
+.findtwtr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    position: fixed; 
+    left: 700px;
+    top: 370px; 
+    left: calc(50% - 310px);
+
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #e8eaed;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
 .body {
     background-color: #181818;
 }
