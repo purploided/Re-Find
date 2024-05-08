@@ -1,5 +1,4 @@
 #search {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -10,21 +9,20 @@
 }
 #search:focus {outline:none;}
 .goggle {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px; 
-    position: fixed; 
+    position: relative; 
     left: calc(50% - 200px);
-    top: 150px; 
+    top: 80px; 
 }
 .findtwtr {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    position: fixed; 
-    left: 700px;
-    top: 370px; 
+    position: relative; 
+    left: 750px;
+    top: 15px; 
     left: calc(50% - 310px);
 
     font-family: 'Courier New', Courier, monospace;
