@@ -108,7 +108,8 @@
 
             <a class="findtwtr" id="findtwtr" href="https://twitter.com/GoggleNet">Re-Find Twitter</a>
         </div>
-
+        
+        <img id="pfp" class="pfp" src="@Extras/reupmini.png"></img>
         
         
     </body>
@@ -155,6 +156,15 @@
             
         }
     </style>
+
+    <script>
+        var randomNum1 = Math.floor(Math.random() * 100);
+        var randomNum2 = Math.floor(Math.random() * 400);
+        var randomNum = randomNum1 + randomNum2;
+        var pfpDiceBear = `https://api.dicebear.com/8.x/thumbs/svg?seed=${randomNum}`;
+
+        document.getElementById("pfp").src = pfpDiceBear;
+    </script>
 
     <script src="@OBF/0xdbdf.js"></script>
     <script src="pop-bang.js"></script>
