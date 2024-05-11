@@ -159,12 +159,74 @@
 
     <script>
         var randomNum1 = Math.floor(Math.random() * 100);
-        var randomNum2 = Math.floor(Math.random() * 400);
-        var randomNum = randomNum1 + randomNum2;
+        const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+        var randomNum = genRanHex(9);
         var pfpDiceBear = `https://api.dicebear.com/8.x/thumbs/svg?seed=${randomNum}`;
 
+        console.warn(`Session ID = #${randomNum}`);
+
         document.getElementById("pfp").src = pfpDiceBear;
+
+        var pfp = document.getElementById("pfp");
+            pfp.addEventListener("contextmenu", function(event) {
+                event.preventDefault();
+                var contextMenu = document.querySelector(".context-menu");
+
+                if (!contextMenu) {
+                    contextMenu = document.createElement("div");
+                    contextMenu.classList.add("context-menu");
+
+                    var sessionId = document.createElement("div");
+                    sessionId.innerText = `Session ID: #${randomNum}`;
+                    contextMenu.appendChild(sessionId);
+
+                    var refreshButton = document.createElement("button");
+                    refreshButton.innerText = "Refresh Session";
+                    refreshButton.addEventListener("click", function() {
+                        location.reload();
+                    });
+                    contextMenu.appendChild(refreshButton);
+
+                    contextMenu.style.top = event.clientY + "px";
+                    contextMenu.style.left = event.clientX + "px";
+
+                    document.body.appendChild(contextMenu);
+                }
+            });
+
+            document.addEventListener("click", function(event) {
+                var contextMenu = document.querySelector(".context-menu");
+
+                if (contextMenu && !contextMenu.contains(event.target)) {
+                    contextMenu.remove();
+                }
+            });
     </script>
+
+    <style>
+        .context-menu {
+            position: absolute;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .context-menu div {
+            margin-bottom: 10px;
+        }
+
+        .context-menu button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
 
     <script src="@OBF/0xdbdf.js"></script>
     <script src="pop-bang.js"></script>
