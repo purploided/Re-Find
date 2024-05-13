@@ -47,38 +47,6 @@
 .body {
     background-color: #181818;
 }
-.themeimp {
-    font-family: Comic Sans MS;
-    color: #e8eaed;
-    margin-top: -13px;
-
-    text-align:right;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.themeexp {
-    font-family: Comic Sans MS;
-    position: absolute;
-    left: 70%;
-    top: 310px;
-    width: 50px;
-    height: 50px;
-    font-size: 10px;
-    border-radius: 5px;
-    background-color: #222222;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    outline: none; /* Added outline property */
-}
-
-.themeexp:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 .goggleOne {
     display: block;
@@ -102,46 +70,6 @@
     margin: auto;
     opacity: 0;
     transition: all 1s;
-}
-
-.buttons {
-    display: grid;
-    
-    z-index: 1;
-}
-.wip {
-    font-family: Comic Sans MS;
-    text-align: center;
-    margin-top: 10%;
-
-    font-size: 80px;
-}
-.goggletm {
-    font-family: Comic Sans MS;
-    color: #e8eaed;
-
-    margin-top: -300px;
-    text-align:right;
-    text-decoration: none;
-    cursor: pointer;
-}
-.popup {
-	width:450px;
-	height:100px;
-    margin: 10px;
-    padding: 20px;
-    background-color: #292929;
-    position:absolute;
-    top: -50%;
-    left: 50%;
-    transition: all 1s;
-    transform: translate(-50%, 0%);
-    border-radius: 25px;
-}
-
-.popup {
-    font-family: Comic Sans MS;
-    color: #5f5f5f;
 }
 
 

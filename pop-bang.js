@@ -32,75 +32,58 @@ function updateStatus() {
 
 setInterval(() => {updateStatus();}, 2500);
 
+function clearHistory() {
+    window.history.go(-(window.history.length - 1));
+    console.log("removed");
+}
+
 /*
-    now its time to throw an attempt at themes or something
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    THEMES!!
-
-    (.gfft stands for Goggle File Format Type. It's a JSON file, but it's special)
-
+    Context Menu for Sessions
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+var randomNum1 = Math.floor(Math.random() * 100);
+const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+var randomNum = genRanHex(9);
+var pfpDiceBear = `https://api.dicebear.com/8.x/thumbs/svg?seed=${randomNum}`;
 
-const body = document.getElementById("body");
-const themeJSON = {
-    'BODY_COLOUR': '',
-    'BODY_IMAGE': '',
-    'GOGGLE_LOGO': './@Extras/goggle.png'
-}
+console.warn(`Session ID = #${randomNum}`);
 
-function JSON_IMPORTER() {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.gfft';
-    input.addEventListener('change', () => {
-        const reader = new FileReader();
-        reader.addEventListener('load', () => {
-            try {
-                const json = JSON.parse(reader.result);
-                Object.assign(themeJSON, json);
-                importThemes();
-            } catch (error) {
-                console.error(error);
-                alert('Invalid JSON file');
-            }
+document.getElementById("pfp").src = pfpDiceBear;
+
+var pfp = document.getElementById("pfp");
+pfp.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    var contextMenu = document.querySelector(".context-menu");
+
+    if (!contextMenu) {
+        contextMenu = document.createElement("div");
+        contextMenu.classList.add("context-menu");
+
+        var sessionId = document.createElement("div");
+        sessionId.innerText = `Session ID: #${randomNum}`;
+        contextMenu.appendChild(sessionId);
+
+        var refreshButton = document.createElement("button");
+        refreshButton.innerText = "Refresh Session";
+        refreshButton.addEventListener("click", function() {
+            // Call the clearHistory function
+            clearHistory();
+            setTimeout(() => {window.location.reload();}, 1000);
         });
-        reader.readAsText(input.files[0]);
-    });
-    input.click();
-}
+        contextMenu.appendChild(refreshButton);
 
-function JSON_EXPORTER() {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(themeJSON));
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href",     dataStr);
-    downloadAnchorNode.setAttribute("download", "theme.gfft");
-    document.body.appendChild(downloadAnchorNode);
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
-}
+        contextMenu.style.top = event.clientY + "px";
+        contextMenu.style.left = event.clientX + "px";
 
-const exportBtn = document.getElementById('export-btn');
-
-exportBtn.addEventListener('click', () => {
-  window.location.assign("./@Extras/themeeditor/edit.html")
+        document.body.appendChild(contextMenu);
+    }
 });
 
-function importThemes() {
-    if (themeJSON.BODY_COLOUR === '') {
-        body.style.backgroundImage = `url(${themeJSON.BODY_IMAGE})`;
-    } else {
-        body.style.backgroundColor = themeJSON.BODY_COLOUR;
-    }
-    goggleLogo.src = themeJSON.GOGGLE_LOGO;
-}
+document.addEventListener("click", function(event) {
+    var contextMenu = document.querySelector(".context-menu");
 
-const defaultTheme = {
-    importThemes() {
-        body.style.backgroundColor = '#202124';
-        goggleLogo.src = './@Extras/goggle.png';
+    if (contextMenu && !contextMenu.contains(event.target)) {
+        contextMenu.remove();
     }
-};
+});
