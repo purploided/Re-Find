@@ -37,10 +37,9 @@
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    position: relative; 
-    left: calc(50% - 200px);
-    top: -290px;
-    left: -0px;
+    position: fixed; 
+    left: 10px;
+    top: 10px;
 }
 
 
@@ -113,17 +112,6 @@
 }
 p{
     text-align: center;
-}
-h1 {
-    font: bold;
-    font-family: 'Comic Sans MS';
-}
-.oops {
-    font-family: Comic Sans MS;
-    text-align: center;
-    margin-top: 2%;
-
-    font-size: 30px;
 }
 .offlinegame {
     display: none;

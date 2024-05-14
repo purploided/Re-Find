@@ -9,7 +9,6 @@
         <meta name="msapplication-navbutton-color" content="#000000">
         <meta name="description" content="Re-Find">
         <meta name="start_url" content="/index.html">
-        <link rel="manifest" href="manifest.json" />
         <meta content="Re-Find - The Most Findable Search Engine" property="og:title" />
         <meta content="Re-Find is the most findable search engine" property="og:description" />
         <meta content="https://purploided.github.io/Re-Find/" property="og:url" />
@@ -82,21 +81,6 @@
                     color: #ffffff;
                 }
             </style>
-    
-            <script>
-                search.addEventListener("keyup", function (event) { // thanks to geeksforgeeks for this code :))
-    
-                if (event.keyCode == 13) {
-                    setTimeout(() => {relocate()}, 500);
-                }
-            });
-            </script>
-    
-            <script>
-                if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker.register('service-worker.js');
-                }
-            </script>
             
             <div class="buttons">
                 <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
@@ -115,7 +99,7 @@
     </body>
 
     <div class="offlinegame" id="offlinegame">
-        <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
+        <img src="@Extras/REFIND.png" class="goggle"></img>
         <h1 class="oops">
             Oops! You're offline.
     
@@ -157,10 +141,6 @@
         }
     </style>
 
-    <script>
-       
-    </script>
-
     <style>
         .context-menu {
             position: absolute;
@@ -186,7 +166,5 @@
         }
     </style>
 
-    <script src="@OBF/0xdbdf.js"></script>
     <script src="pop-bang.js"></script>
-    <script src="checkurl.js"></script>
 </html>
