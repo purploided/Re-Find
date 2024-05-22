@@ -15,9 +15,18 @@ function avatarDecorUnlockSecret(code) {
     }
 }
 
+function avatarDecorBlahaj() {
+    var avdecorBlahaj = new Image();
+    avdecorBlahaj.src = "@Extras/blahajdecor.png";
+
+    localStorage.setItem("Blahaj", avdecorBlahaj.src);
+    console.log("%cSuccessfully Unlocked the 'Blahaj' Avatar Decor!", "font-weight: bold; color: yellow;");
+}
+
 function avatarDecorCheck() {
     let avdecorPlaced = document.getElementById("avdecor");
     let avdecorHearts = localStorage.getItem("Hearts");
+    let avdecorBlahaj = localStorage.getItem("Blahaj");
 
     if (localStorage.getItem("Hearts") === null) {
         avdecorPlaced.src = "@Extras/noavdecor.png";
@@ -25,6 +34,18 @@ function avatarDecorCheck() {
     else {
         avdecorPlaced.src = avdecorHearts;
     }
+    if (localStorage.getItem("Blahaj") === null) {
+        avdecorPlaced.src = "@Extras/noavdecor.png";
+    }
+    else {
+        avdecorPlaced.src = avdecorBlahaj;
+    }
 }
+
+var rft = document.getElementById("findtwtr");
+
+rft.addEventListener("click", function() {
+    avatarDecorBlahaj();
+});
 
 setInterval(() => {avatarDecorCheck();}, 100);
