@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="./style.css"></link>
         <link rel="icon" type="image/x-icon" href="@Extras/reupmini.png"></link>
-        <title id="goggletitle">Re-Find</title>
+        <title id="goggletitle">Re-Find Logged</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#000000">
         <meta name="msapplication-navbutton-color" content="#000000">
@@ -12,13 +12,13 @@
         <meta content="Re-Find - The Most Findable Search Engine" property="og:title" />
         <meta content="Re-Find is the most findable search engine" property="og:description" />
         <meta content="https://purploided.github.io/Re-Find/" property="og:url" />
-        <meta content="@Extras/reupmini.png" property="og:image" />
-        <script async src="https://cse.google.com/cse.js?cx=a7a602411b77f45fa"></script>
+        <meta content="/@Extras/reupmini.png" property="og:image" />
+        <script async src="https://cse.google.com/cse.js?cx=f28d81b2aaa164fbf"></script>
     </head>
     <body class="body" id="body">
         <div class="goggleOne" id="goggleOne">
             <div class="gcse-search" id="search"></div>
-            <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
+            <img src="/@Extras/REFIND.png" class="goggle" id="goggle"></img>
             <div id="searchdiv" class="searchdiv"></div>
             <style>
                 .gsc-results {
@@ -94,59 +94,29 @@
             <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
             <a class="findtwtr" id="findtwtr" href="https://twitter.com/GoggleNet">Re-Find Twitter</a>
-            <a class="findtwtr" id="findtwtr" href="@Re-Find Logged/index.html">‎ Re-Find Logged</a>
+            <a class="findtwtr" id="findtwtr2" href="/index.html">‎ Go Back</a>
+
+            <script>
+                function checkURL(url) {
+                    if (url.includes("#gsc.tab=0&gsc.q=")) {
+                        if (goggle) {
+                            goggle.style.display = "none";
+                        }
+                        if (findtwtr) {
+                            findtwtr.style.display = "none";
+                        }
+                        if (findtwtr2) {
+                            findtwtr2.style.display = "none";
+                        }
+                        if (search) {
+                            search.style.top = "0px";
+                        }
+                    }
+                }
+
+
+                setInterval(() => {checkURL(window.location.href);}, 2500);
+            </script>
         </div>
-        
-        <img id="pfp" class="pfp" src="@Extras/reupmini.png"></img>
-
-        <img id="avdecor" class="avdecor" src="@Extras/noavdecor.png"></img>
-        
-        
     </body>
-
-    <div class="offlinegame" id="offlinegame">
-        <img src="@Extras/REFIND.png" class="goggle"></img>
-        <h1 class="oops">
-            Oops! You're offline.
-    
-            Play this epic clicker game instead.
-        </h1>
-
-        <center>
-            <h1>Score: <span id="scoreSpan"></span></h1>
-
-                <button id="btn2">
-                    
-                </button>
-        </center>
-    </div>
-
-    <script>
-        var counter = 0;
-        var btn2 = document.getElementById("btn2");
-
-        btn2.addEventListener('click', function() {
-            counter++;
-            document.getElementById("scoreSpan").innerHTML = counter;            
-        });
-    </script>
-
-    <style>
-        #btn2 {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-
-            font-family: Comic Sans MS;
-            background-color: red;
-            border-color: black;
-            border-width: 10px;
-
-            cursor: pointer;
-            
-        }
-    </style>
-
-    <script src="pop-bang.js"></script>
-    <script src="avdecor.js"></script>
 </html>
