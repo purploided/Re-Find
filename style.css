@@ -31,6 +31,25 @@
     font-weight: 1000;
     font-size: 20px;
 }
+.addtab {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    position: relative; 
+    left: 750px;
+    top: 15px; 
+    left: calc(50% - 310px);
+
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #e8eaed;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.addtab:hover {
+    color: #e8eaed;
+    cursor: pointer;
+}
 .pfp {
     border-radius: 50%;
     width: 50px;
@@ -58,6 +77,9 @@
 
 .goggleOne {
     display: block;
+}
+.goggleTwo {
+    display: none;
 }
 .feelinlucky {
     background-color: #303134;

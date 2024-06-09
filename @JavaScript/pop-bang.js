@@ -28,37 +28,6 @@ function checkURL(url) {
 
 setInterval(() => {checkURL(window.location.href);}, 2500);
 
-
-
-/*
-    time to add chrome dinosaur game, minus the google part
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    OFFLINE!!
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
-function updateStatus() {
-    if(navigator.onLine) {
-        var goggleOne = document.getElementById("goggleOne");
-        var offlineDive = document.getElementById("offlinegame");
-
-        goggleOne.style.display = "block";
-        offlineDive.style.display = "none";
-    }
-    else {
-        var goggleOne = document.getElementById("goggleOne");
-        var offlineDive = document.getElementById("offlinegame");
-
-        goggleOne.style.display = "none";
-        offlineDive.style.display = "block";
-    }
-}
-
-setInterval(() => {updateStatus();}, 2500);
-
 function clearHistory() {
     window.history.back(-(window.history.length - 2));
     console.log("removed");
@@ -81,7 +50,5 @@ Y88b  d88P Y8b.          X88      X88 888 Y88..88P 888  888
  
 Session ID: #${randomNum}
 `, "color: #ffff00; font-weight: bold; font-size: 16px; padding: 5px;");
-
-
 
 document.getElementById("pfp").src = pfpDiceBear;
