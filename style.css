@@ -46,6 +46,46 @@
     font-weight: 1000;
     font-size: 20px;
 }
+.tab2 {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed; 
+    left: 70px;
+    top: 10px;
+
+    display: none;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #e8eaed;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.tab2:hover {
+    color: #e8eaed;
+    cursor: pointer;
+}
+.tab1 {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed; 
+    left: 79px;
+    top: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #e8eaed;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.tab1:hover {
+    color: #e8eaed;
+    cursor: pointer;
+}
 .addtab:hover {
     color: #e8eaed;
     cursor: pointer;
