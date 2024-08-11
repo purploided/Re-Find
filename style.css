@@ -187,3 +187,93 @@ p{
 .offlinegame {
     display: none;
 }
+
+#search {
+    height: 40px;
+    width: 40%;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 300px;
+
+    background-color: #20212400;
+    
+}
+
+@media screen and (max-width:440px), screen and (max-height:940px) {
+    .goggle {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px; 
+        position: relative; 
+        left: calc(50% - 170px);
+        top: 80px; 
+    }
+    .findtwtr {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        position: relative; 
+        left: 750px;
+        top: 15px; 
+        left: calc(50% - 310px);
+
+        display:none;
+
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        color: #e8eaed;
+        font-weight: 1000;
+        font-size: 20px;
+    }
+    .addtab {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        position: relative; 
+        left: 750px;
+        top: 15px; 
+        left: calc(50% - 310px);
+
+        display:none;
+
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        color: #e8eaed;
+        font-weight: 1000;
+        font-size: 20px;
+    }
+    .tab2 {
+        width: 200px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed; 
+        left: 70px;
+        top: 10px;
+
+        display: none;
+
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        color: #e8eaed;
+        font-weight: 1000;
+        font-size: 20px;
+    }
+    .tab2:hover {
+        color: #e8eaed;
+        cursor: pointer;
+    }
+    #search {
+        height: 40px;
+        width: 80%;
+    
+        position: relative;
+        margin-left: 0px;
+        margin-right: auto;
+        top: 250px;
+    
+        background-color: #20212400;
+    }
+}
