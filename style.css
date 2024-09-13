@@ -210,3 +210,27 @@
     }
 }
 
+.context-menu {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.context-menu div {
+    margin-bottom: 10px;
+}
+
+.context-menu button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Add this line to make each button appear below each other */
+    margin-bottom: 5px; /* Add this line to add some spacing between each button */
+}
