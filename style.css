@@ -14,7 +14,7 @@
     max-width: 500px; 
     position: relative; 
     left: calc(50% - 200px);
-    top: 80px; 
+    top: 90px; 
 }
 .findtwtr {
     margin-left: auto;
@@ -22,7 +22,7 @@
     width: 200px;
     position: relative; 
     left: 750px;
-    top: 15px; 
+    top: 50px; 
     left: calc(50% - 310px);
 
     font-family: 'Courier New', Courier, monospace;
@@ -32,13 +32,12 @@
     font-size: 20px;
 }
 .addtab {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1px -1px; /* Add this line to center the element horizontally */
     width: 200px;
-    position: relative; 
-    left: 750px;
-    top: 15px; 
-    left: calc(50% - 310px);
+    position: relative;
+    top: 97px;
+    left: 52.2%;
+    transform: translate(-50%, -50%);
 
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
@@ -110,81 +109,14 @@
     top: 10px;
 }
 
-
 .body {
-    background-color: #181818;
+    background-color: #202124;
 }
 
 .goggleOne {
     display: block;
 }
 .goggleTwo {
-    display: none;
-}
-.feelinlucky {
-    background-color: #303134;
-    border: 1px solid #303134;
-    border-radius: 4px;
-    color: #e8eaed;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-
-    margin: auto;
-    opacity: 0;
-    transition: all 1s;
-}
-
-
-.game {
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-    margin: auto;
-    background-image: url(https://cdn.discordapp.com/attachments/920952514323546115/924006969336037376/sedf.gif);
-    background-position: center;
-}
-#character {
-    width: 20px;
-    height: 50px;
-    background-image: url(https://cdn.discordapp.com/attachments/920952514323546115/924129344790626314/ezgif-3-4758b12164.gif);
-    position: relative;
-    top: 150px;
-}
-.animate{
-    animation: jump 0.3s linear;
-}
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
-}
-
-#block {
-    background-image: url('https://cdn.discordapp.com/attachments/920952514323546115/924009934641840168/ezgif-2-17ab284b2e.gif');
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 130px;
-    left: 500px;
-    animation: block 1s infinite linear;
-}
-@keyframes block{
-    0%{left: 500px}
-    100%{left: -20px}
-}
-p{
-    text-align: center;
-}
-.offlinegame {
     display: none;
 }
 
@@ -277,3 +209,4 @@ p{
         background-color: #20212400;
     }
 }
+

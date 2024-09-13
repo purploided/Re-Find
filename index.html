@@ -79,15 +79,21 @@
                     border-radius: 30px;
                 }
             </style>
-            
-            <div class="buttons">
-                <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
-            </div>
 
             <a class="findtwtr" id="findtwtr" href="https://twitter.com/GoggleNet">Re-Find Twitter</a>
             <a class="findtwtr" id="findtwtr" href="https://logged.re-find.net">‎ Re-Find Logged</a>
-            <a class="addtab" id="addtab">‎ +</a>
             <a class="tab2" id="tab2">‎ Tab 2</a>
+
+            <svg class="addtab" id="addtab" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="15px" height="15px" viewBox="0 0 45.402 45.402"
+                xml:space="preserve">
+            <g>
+                <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141
+                    c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27
+                    c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435
+                    c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"/>
+            </g>
+            </svg>
 
             <div class="menu1" id="menu1"></div>
         </div>
@@ -154,10 +160,6 @@
                     border-radius: 30px;
                 }
             </style>
-            
-            <div class="buttons">
-                <button id="feelinlucky" class="feelinlucky">I'm Feelin Lucky</button>
-            </div>
 
             <a class="tab1" id="tab1">Tab 1</a>
         </div>
@@ -165,49 +167,6 @@
 
     <img id="pfp" class="pfp" src="@Extras/reupmini.png"></img>
     <img id="avdecor" class="avdecor" src="@Extras/noavdecor.png"></img>
-
-    <div class="offlinegame" id="offlinegame">
-        <img src="@Extras/REFIND.png" class="goggle"></img>
-        <h1 class="oops">
-            Oops! You're offline.
-    
-            Play this epic clicker game instead.
-        </h1>
-
-        <center>
-            <h1>Score: <span id="scoreSpan"></span></h1>
-
-                <button id="btn2">
-                    
-                </button>
-        </center>
-    </div>
-
-    <script>
-        var counter = 0;
-        var btn2 = document.getElementById("btn2");
-
-        btn2.addEventListener('click', function() {
-            counter++;
-            document.getElementById("scoreSpan").innerHTML = counter;            
-        });
-    </script>
-
-    <style>
-        #btn2 {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-
-            font-family: Comic Sans MS;
-            background-color: red;
-            border-color: black;
-            border-width: 10px;
-
-            cursor: pointer;
-            
-        }
-    </style>
 
     <script src="@JavaScript/pop-bang.js"></script>
     <script src="@JavaScript/avdecor.js"></script>
