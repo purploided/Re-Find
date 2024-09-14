@@ -231,6 +231,6 @@
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
-    display: block; /* Add this line to make each button appear below each other */
-    margin-bottom: 5px; /* Add this line to add some spacing between each button */
+    display: block;
+    margin-bottom: 5px;
 }
