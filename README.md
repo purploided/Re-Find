@@ -18,7 +18,4 @@
 2. **Effortless Searching:**
    - Type your query into the search bar and let Re-Find handle the rest. Get accurate and relevant results quickly.
 
-3. **Stay Updated:**
-   - Re-Find keeps its database fresh, ensuring you always get the latest and most relevant information.
-
 Give Re-Find a try and simplify your online search experience today!

@@ -1,6 +1,10 @@
+/*
+    profile picture changer and session id
+*/
+
 let pfp = document.getElementById("avdecor");
 if (pfp) {
-    pfp.addEventListener("contextmenu", function(event) {
+    pfp.addEventListener("contextmenu", function(event) { // context menu
         event.preventDefault();
         let contextMenu = document.querySelector(".context-menu");
 
@@ -17,7 +21,7 @@ if (pfp) {
                 location.reload();
             });
             contextMenu.appendChild(refreshButton);
-
+            // god please help me
             let PfpButton = document.createElement("button");
             PfpButton.innerText = "Change Profile Picture";
             PfpButton.addEventListener("click", function() {
@@ -54,8 +58,8 @@ if (pfp) {
     });
 }
 
-let profile = localStorage.getItem("profile");
+let profile = localStorage.getItem("profile"); // get the profile picture from local storage
 if (profile) {
     let pfpImage = document.getElementById("pfp") as HTMLImageElement;
-    pfpImage.src = profile;
+    pfpImage.src = profile; // set the profile picture to the one in local storage
 }

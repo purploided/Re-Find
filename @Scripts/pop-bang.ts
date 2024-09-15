@@ -25,19 +25,18 @@ function checkURL(url: string) {
     }
 }
 
-setInterval(() => {
+setInterval(() => { 
     checkURL(window.location.href);
 }, 2500);
-
-function clearHistory() {
-    window.history.back();
-    console.log("removed");
-}
 
 const randomNum1 = Math.floor(Math.random() * 100);
 const genRanHex = (size: number) => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 const randomNum = genRanHex(9);
 const pfpDiceBear = `https://api.dicebear.com/8.x/thumbs/svg?seed=${randomNum}`;
+
+// session
+// very much subject to change
+// :)
 
 console.warn(`%c
 .d8888b.                              d8b                   
