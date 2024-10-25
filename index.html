@@ -2,8 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css"></link>
-        <link rel="icon" type="image/x-icon" href="@Extras/reupmini.png"></link>
-        <title id="goggletitle">Re-Find</title>
+        <link rel="icon" type="image/x-icon" href="Extras/reupmini.png"></link>
+        <title id="refindtitle">Re-Find</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#000000">
         <meta name="msapplication-navbutton-color" content="#000000">
@@ -12,16 +12,19 @@
         <meta content="Re-Find" property="og:title" />
         <meta content="Search securely without the risk of getting logged. Re-Find doesn't send your searches to your history!" property="og:description" />
         <meta content="https://www.re-find.net" property="og:url" />
-        <meta content="https://github.com/purploided/Re-Find/blob/main/@Extras/reupmini.png?raw=true" property="og:image" />
+        <meta content="https://github.com/purploided/Re-Find/blob/main/Extras/reupmini.png?raw=true" property="og:image" />
         <script async src="https://cse.google.com/cse.js?cx=a7a602411b77f45fa"></script>
     </head>
     
     <body class="body" id="body">
-        <div class="goggleOne" id="goggleOne">
+        <div class="refindOne" id="refindOne"></div>
             <div class="gcse-search" id="search"></div>
-            <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
-            <div id="searchdiv" class="searchdiv"></div>
+            <h1 class="refind" id="refind">Re-Find</h1>
             <style>
+                @font-face {
+                    font-family: 'Moon Bold';
+                    src: url(Fonts/Moon\ Bold.otf);
+                }
                 .gsc-results {
                     background-color: #20212400;
                     width: auto;
@@ -31,11 +34,13 @@
                 }
 
                 .gsc-control-cse {
+                    font-family: 'Moon Bold';
+                    font-weight: 100;
                     border-color: #20212400;
                     background-color: #20212400;
                 }
                 .styleable-rootcontainer {
-                    font-family: arial,sans-serif,arial,sans-serif;
+                    font-family: 'Moon Bold';
                     font-size: 13px;
                     padding-bottom: 6px;
                     padding-left: 4px;
@@ -49,7 +54,7 @@
                     border-radius: 10%;
                 }
                 .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
-	                border-color: #20212400;
+                    border-color: #20212400;
                     background-color: #20212400;                }
                 #search:focus {outline:none;}
 
@@ -68,7 +73,7 @@
                 }
 
                 .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
-	                color: #ffffff;
+                    color: #ffffff;
                 }
                 .gs-webResult div.gs-visibleUrl {
                     color: #ffffff;
@@ -78,102 +83,24 @@
                     border-color: #BBBBBB;
                     border-radius: 30px;
                 }
-            </style>
-
-            <a class="findtwtr" id="findtwtr" href="https://twitter.com/GoggleNet">Re-Find Twitter</a>
-            <a class="findtwtr" id="findtwtr" href="https://logged.re-find.net">‎ Re-Find Logged</a>
-            <a class="tab2" id="tab2">‎ Tab 2</a>
-            <a class="tab1" id="tab11">Tab 1</a>
-
-            <svg class="addtab" id="addtab" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                width="15px" height="15px" viewBox="0 0 45.402 45.402"
-                xml:space="preserve">
-            <g>
-                <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141
-                    c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27
-                    c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435
-                    c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"/>
-            </g>
-            </svg>
-
-            <div class="menu1" id="menu1"></div>
-        </div>
-
-        <div class="goggleTwo" id="goggleTwo">
-            <div class="gcse-search" id="search"></div>
-            <img src="@Extras/REFIND.png" class="goggle" id="goggle"></img>
-            <div id="searchdiv" class="searchdiv"></div>
-            <style>
-                .gsc-results {
-                    background-color: #20212400;
-                    width: auto;
+                .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+                    color: #333;
+                    background-color: #7fffd400;
                 }
-                .gcsc-more-maybe-branding-root {
-                    display: none;
-                }
-
-                .gsc-control-cse {
-                    border-color: #20212400;
-                    background-color: #20212400;
-                }
-                .styleable-rootcontainer {
-                    font-family: arial,sans-serif,arial,sans-serif;
-                    font-size: 13px;
-                    padding-bottom: 6px;
-                    padding-left: 4px;
-                    padding-top: 6px;
-                    color: #EEEEEE;
-                    width: 100%;
-                    -ms-flex-negative: 1;
-                    -webkit-box-flex: 1 0;
-                    -webkit-flex-shrink: 1;
-                    flex-shrink: 1;
-                    border-radius: 10%;
-                }
-                .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
-	                border-color: #20212400;
-                    background-color: #20212400;                }
-                #search:focus {outline:none;}
-
-                .gsc-search-button-v2 {
-                    font-size: 0;
-                    padding: 10px;
-                    width: auto;
-                    vertical-align: middle;
-                    border: 1px solid #000;
-                    border-radius: 2px;
-                    margin-top: 2px;
-                    border-color: #00000000;
-                    background-color: #33333300;
-                    background-image: linear-gradient(top, #333, #333);
-                    display: none;
-                }
-
-                .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
-	                color: #ffffff;
-                }
-                .gs-webResult div.gs-visibleUrl {
-                    color: #ffffff;
-                }
-
-                input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
-                    border-color: #BBBBBB;
-                    border-radius: 30px;
+                .gsc-results .gsc-cursor-box .gsc-cursor-page {
+                    border-color: #444444;
+                    background-color: #FFF0;
+                    color: #444444;
                 }
             </style>
-
-            <a class="tab1" id="tab1">Tab 1</a>
-            <a class="tab2" id="tab22" style="display:block;">‎ Tab 2</a>
         </div>
     </body>
+    <img id="pfp" class="pfp" src="Extras/reupmini.png"></img>
+    <img id="avdecor" class="avdecor" src="Extras/noavdecor.png"></img>
 
-    <img id="pfp" class="pfp" src="@Extras/reupmini.png"></img>
-    <img id="avdecor" class="avdecor" src="@Extras/noavdecor.png"></img>
-
-    <script type="text/typescript" src="@Scripts/avdecor.ts"></script>
-    <script type="text/typescript" src="@Scripts/pop-bang.ts"></script>
-    <script type="text/typescript" src="@Scripts/tabs.ts"></script>
-    <script type="text/typescript" src="@Scripts/profile.ts"></script>
+    <script type="text/typescript" src="Scripts/avdecor.ts"></script>
+    <script type="text/typescript" src="Scripts/pop-bang.ts"></script>
+    <script type="text/typescript" src="Scripts/profile.ts"></script>
 
     <script src="https://unpkg.com/typescript/lib/typescript.js"></script>
     <script src="https://raw.githack.com/basarat/typescript-script/master/transpiler.js"></script>

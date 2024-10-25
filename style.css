@@ -1,123 +1,11 @@
-#search {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    max-width: 800px;
-    position: fixed; 
-    left: 50px;
-    top: 15%; 
+@font-face {
+    font-family: 'Moon Bold';
+    src: url(Fonts/Moon\ Bold.otf);
 }
-#search:focus {outline:none;}
-.goggle {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px; 
-    position: relative; 
-    left: calc(50% - 200px);
-    top: 90px; 
+body {
+    background-color: #222222;
+    font-family: 'Moon Bold';
 }
-.findtwtr {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    position: relative; 
-    left: 750px;
-    top: 50px; 
-    left: calc(50% - 310px);
-
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #e8eaed;
-    font-weight: 1000;
-    font-size: 20px;
-}
-.addtab {
-    margin: 1px -1px; /* Add this line to center the element horizontally */
-    width: 200px;
-    position: relative;
-    top: 97px;
-    left: 52.2%;
-    transform: translate(-50%, -50%);
-
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #e8eaed;
-    font-weight: 1000;
-    font-size: 20px;
-}
-.tab2 {
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed; 
-    left: 70px;
-    top: 10px;
-
-    display: none;
-
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #e8eaed;
-    font-weight: 1000;
-    font-size: 20px;
-}
-.tab2:hover {
-    color: #e8eaed;
-    cursor: pointer;
-}
-.tab1 {
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed; 
-    left: 13px;
-    top: 10px;
-
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #e8eaed;
-    font-weight: 1000;
-    font-size: 20px;
-}
-.tab1:hover {
-    color: #e8eaed;
-    cursor: pointer;
-}
-.addtab:hover {
-    color: #e8eaed;
-    cursor: pointer;
-}
-.pfp {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed; 
-    left: 10px;
-    top: 50px;
-}
-.avdecor {
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed; 
-    left: 10px;
-    top: 50px;
-}
-
-.body {
-    background-color: #202124;
-}
-
-.goggleOne {
-    display: block;
-}
-.goggleTwo {
-    display: none;
-}
-
 #search {
     height: 40px;
     width: 40%;
@@ -127,88 +15,67 @@
     margin-right: auto;
     top: 300px;
 
-    background-color: #20212400;
-    
-}
+    font-family: 'Moon Bold';
 
+    background-color: #20212400;
+}
+.refind {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px; 
+    top: 90px; 
+    position: relative;
+
+    font-family: 'Moon Bold';
+    text-decoration: none;
+    color: #e8eaed;
+    font-weight: 1000;
+    font-size: 100px;
+    text-align: center;
+}
+.pfp {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed; 
+    left: 10px;
+    top: 10px;
+}
+.avdecor {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed; 
+    left: 10px;
+    top: 10px;
+}
 @media screen and (max-width:440px), screen and (max-height:940px) {
-    .goggle {
+    .refind {
         margin-left: auto;
         margin-right: auto;
-        max-width: 350px; 
-        position: relative; 
-        left: calc(50% - 170px);
-        top: 80px; 
+        max-width: 1000px; 
+        top: 0px; 
+        position: relative;
+    
+        font-family: 'Moon Bold';
+        text-decoration: none;
+        color: #e8eaed;
+        font-weight: 1000;
+        font-size: 70px;
+        text-align: center;
     }
     .pfp {
         display: none;
-    }
-    .findtwtr {
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        position: relative; 
-        left: 750px;
-        top: 15px; 
-        left: calc(50% - 310px);
-
-        display:none;
-
-        font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-        color: #e8eaed;
-        font-weight: 1000;
-        font-size: 20px;
-    }
-    .addtab {
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        position: relative; 
-        left: 750px;
-        top: 15px; 
-        left: calc(50% - 310px);
-
-        display:none;
-
-        font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-        color: #e8eaed;
-        font-weight: 1000;
-        font-size: 20px;
-    }
-    .tab1 {
-        display: none;
-    }
-    .tab2 {
-        width: 200px;
-        height: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        position: fixed; 
-        left: 70px;
-        top: 10px;
-
-        display: none;
-
-        font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-        color: #e8eaed;
-        font-weight: 1000;
-        font-size: 20px;
-    }
-    .tab2:hover {
-        color: #e8eaed;
-        cursor: pointer;
     }
     #search {
         height: 40px;
         width: 80%;
     
         position: relative;
-        margin-left: 0px;
-        margin-right: auto;
-        top: 250px;
+        top: 150px;
     
         background-color: #20212400;
     }
