@@ -1,17 +1,16 @@
 const d = new Date();
 const month = d.getMonth();
-const refindLogo = document.getElementById("refind") as HTMLElement;
+const refindLogo = document.getElementById("refind");
 
 /*
     Check url code
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-const refindLogo = document.getElementById("refind") as HTMLElement;
-const findtwtr = document.getElementById("findtwtr") as HTMLElement;
-const containerOne = document.getElementById("search") as HTMLElement;
+const findtwtr = document.getElementById("findtwtr");
+const containerOne = document.getElementById("search");
 
-function checkURL(url: string) {
+function checkURL(url) {
     if (url.includes("#gsc.tab=0&gsc.q=")) {
         if (refindLogo) {
             refindLogo.style.display = "none";
@@ -34,7 +33,7 @@ setInterval(() => {
 }, 2500);
 
 const randomNum1 = Math.floor(Math.random() * 100);
-const genRanHex = (size: number) => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+const genRanHex = (size) => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 const randomNum = genRanHex(9);
 const pfpDiceBear = `https://api.dicebear.com/8.x/thumbs/svg?seed=${randomNum}`;
 
@@ -55,4 +54,4 @@ Y88b  d88P Y8b.          X88      X88 888 Y88..88P 888  888
 Session ID: #${randomNum}
 `, "color: #ffff00; font-weight: bold; font-size: 16px; padding: 5px;");
 
-(document.getElementById("pfp") as HTMLImageElement).src = pfpDiceBear;
+document.getElementById("pfp").src = pfpDiceBear;

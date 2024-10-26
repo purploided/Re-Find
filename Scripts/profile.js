@@ -29,13 +29,13 @@ if (pfp) {
                 fileInput.type = "file";
                 fileInput.accept = "image/*";
                 fileInput.addEventListener("change", function(event) {
-                    let file = (event.target as HTMLInputElement).files![0];
+                    let file = event.target.files[0];
                     let reader = new FileReader();
                     reader.onload = function() {
-                        let pfpImage = document.getElementById("pfp") as HTMLImageElement;
-                        pfpImage.src = reader.result as string;
+                        let pfpImage = document.getElementById("pfp");
+                        pfpImage.src = reader.result;
 
-                        localStorage.setItem("profile", reader.result as string);
+                        localStorage.setItem("profile", reader.result);
                     };
                     reader.readAsDataURL(file);
                 });
@@ -60,6 +60,6 @@ if (pfp) {
 
 let profile = localStorage.getItem("profile"); // get the profile picture from local storage
 if (profile) {
-    let pfpImage = document.getElementById("pfp") as HTMLImageElement;
+    let pfpImage = document.getElementById("pfp");
     pfpImage.src = profile; // set the profile picture to the one in local storage
 }

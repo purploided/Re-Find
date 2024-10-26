@@ -5,11 +5,11 @@
     Use the secret code to get a fancy avatar decoration. (it looks like shit)
 */
 
-let currentDecor: number = 0;
+let currentDecor = 0;
 
-function avatarDecorUnlockSecret(code: string): void {
+function avatarDecorUnlockSecret(code) {
     if (code == "2fef5942") {
-        const avdecordefault: HTMLImageElement = new Image();
+        const avdecordefault = new Image();
         avdecordefault.src = "Extras/avdecortest.png";
 
         localStorage.setItem("Hearts", avdecordefault.src);
@@ -17,23 +17,22 @@ function avatarDecorUnlockSecret(code: string): void {
     }
 }
 
-function avatarDecorBlahaj(): void {
-    const avdecorBlahaj: HTMLImageElement = new Image();
+function avatarDecorBlahaj() {
+    const avdecorBlahaj = new Image();
     avdecorBlahaj.src = "Extras/blahajdecor.png";
 
     localStorage.setItem("Blahaj", avdecorBlahaj.src);
     console.log("%cSuccessfully Unlocked the 'Blahaj' Avatar Decor!", "font-weight: bold; color: yellow;");
 }
 
-function SwitchBlahaj(): void {
+function SwitchBlahaj() {
     if (localStorage.getItem("Blahaj") === null) {
-        const avdecorPlaced: HTMLImageElement = document.getElementById("avdecor") as HTMLImageElement;
+        const avdecorPlaced = document.getElementById("avdecor");
         avdecorPlaced.src = "Extras/noavdecor.png";
-    }
-    else {
-        const avdecorPlaced: HTMLImageElement = document.getElementById("avdecor") as HTMLImageElement;
-        const avdecorBlahaj: string | null = localStorage.getItem("Blahaj");
-    
+    } else {
+        const avdecorPlaced = document.getElementById("avdecor");
+        const avdecorBlahaj = localStorage.getItem("Blahaj");
+
         if (avdecorBlahaj) {
             avdecorPlaced.src = avdecorBlahaj;
         }
@@ -43,15 +42,14 @@ function SwitchBlahaj(): void {
     }
 }
 
-function SwitchHearts(): void {
+function SwitchHearts() {
     if (localStorage.getItem("Hearts") === null) {
-        const avdecorPlaced: HTMLImageElement = document.getElementById("avdecor") as HTMLImageElement;
+        const avdecorPlaced = document.getElementById("avdecor");
         avdecorPlaced.src = "Extras/noavdecor.png";
-    }
-    else {
-        const avdecorPlaced: HTMLImageElement = document.getElementById("avdecor") as HTMLImageElement;
-        const avdecorHearts: string | null = localStorage.getItem("Hearts");
-    
+    } else {
+        const avdecorPlaced = document.getElementById("avdecor");
+        const avdecorHearts = localStorage.getItem("Hearts");
+
         if (avdecorHearts) {
             avdecorPlaced.src = avdecorHearts;
         }
@@ -61,31 +59,27 @@ function SwitchHearts(): void {
     }
 }
 
-function checkCurrentDecor(): void {
+function checkCurrentDecor() {
     if (localStorage.getItem("CurrentDecor") === null) {
         currentDecor = 0;
-    }
-    else if (currentDecor == 0){
+    } else if (currentDecor == 0) {
         currentDecor = Number(localStorage.getItem("CurrentDecor"));
-    }
-    else if (currentDecor == 1) {
+    } else if (currentDecor == 1) {
         SwitchBlahaj();
-    }
-    else if (currentDecor == 2) {
+    } else if (currentDecor == 2) {
         SwitchHearts();
-    }
-    else {
-        const avdecorPlaced: HTMLImageElement = document.getElementById("avdecor") as HTMLImageElement;
+    } else {
+        const avdecorPlaced = document.getElementById("avdecor");
         avdecorPlaced.src = "Extras/noavdecor.png";
     }
 }
 
 setInterval(checkCurrentDecor, 1000);
 
-const rft: HTMLElement | null = document.getElementById("findtwtr");
+const rft = document.getElementById("findtwtr");
 
 if (rft) {
-    rft.addEventListener("click", function() {
+    rft.addEventListener("click", function () {
         avatarDecorBlahaj();
     });
 }
@@ -94,8 +88,8 @@ if (rft) {
     Avatar Decoration Menu
 */
 
-function avatarDecorationMenu(): void {
-    const divInserter: HTMLElement | null = document.getElementById("menu1");
+function avatarDecorationMenu() {
+    const divInserter = document.getElementById("menu1");
 
     if (divInserter) {
         divInserter.innerHTML = `
