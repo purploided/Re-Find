@@ -1,9 +1,9 @@
 <p align="center">
-  <img width="156" align="center" src="https://github.com/purploided/Re-Find/blob/main/%40Extras/reupmini.png">
+  <img width="156" align="center" src="https://github.com/purploided/Re-Find/blob/main/Extras/reupmini.png">
 </p>
 
 <h1 align="center">
-  <img width="256" align="center" src="https://github.com/purploided/Re-Find/blob/main/%40Extras/REFIND.png">
+  <img width="256" align="center" src="https://github.com/purploided/Re-Find/blob/main/Extras/REFIND.png">
 </h1>
 
 <h2 align="center">Welcome to Re-Find</h2>
