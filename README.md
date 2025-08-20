@@ -2,10 +2,6 @@
   <img width="156" align="center" src="https://github.com/purploided/Re-Find/blob/main/Re-Find-2025.png">
 </p>
 
-<h1 align="center">
-  <img width="256" align="center" src="https://github.com/purploided/Re-Find/blob/main/Re-Find-2025.png?raw=true">
-</h1>
-
 <h2 align="center">Welcome to Re-Find</h2>
 
 <h3 align="center">Re-Find is a search engine powered by the Google Search API, designed to help you find what you need online.</h3>
