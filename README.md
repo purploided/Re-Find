@@ -9,7 +9,7 @@
 <h1 align="center">How to Use Re-Find:</h1>
 
 1. **Getting Started:**
-   - Go to the [Official Re-Find Website](https://re-find.purploid.xyz) to start using the search engine.
+   - Go to the [Official Re-Find Website](https://refind.purploid.xyz) to start using the search engine.
 
 2. **Effortless Searching:**
    - Type your query into the search bar and let Re-Find handle the rest. Get accurate and relevant results quickly.
