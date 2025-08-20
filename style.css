@@ -1,37 +1,24 @@
 @font-face {
-    font-family: 'Moon Bold';
-    src: url(Fonts/Moon\ Bold.otf);
+    font-family: 'Typographia';
+    src: url(Fonts/DroplineRegular-Wpegz.otf);
 }
 body {
-    background-color: #181a1b;
-    font-family: 'Moon Bold';
+    background-image: linear-gradient(120deg, rgb(22, 22, 22), rgb(20, 20, 20));
+    color: rgb(199, 199, 199);
+    font-family: 'Typographia';
 }
 #search {
     height: 40px;
-    width: 40%;
+    width: 70%;
 
     position: relative;
     margin-left: auto;
     margin-right: auto;
     top: 300px;
 
-    font-family: 'Moon Bold';
+    font-family: 'Typographia';
 
-    background-color: #20212400;
-}
-.refind {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px; 
-    top: 90px; 
-    position: relative;
-
-    font-family: 'Moon Bold';
-    text-decoration: none;
-    color: #e8eaed;
-    font-weight: 1000;
-    font-size: 100px;
-    text-align: center;
+    background-color: #2b2b2b00;
 }
 .pfp {
     border-radius: 50%;
@@ -52,39 +39,17 @@ body {
     left: 10px;
     top: 10px;
 }
+
 @media screen and (max-width:440px), screen and (max-height:940px) {
-    .refind {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1000px; 
-        top: 0px; 
-        position: relative;
-    
-        font-family: 'Moon Bold';
-        text-decoration: none;
-        color: #e8eaed;
-        font-weight: 1000;
-        font-size: 70px;
-        text-align: center;
-    }
     .pfp {
         display: none;
-    }
-    #search {
-        height: 40px;
-        width: 80%;
-    
-        position: relative;
-        top: 150px;
-    
-        background-color: #20212400;
     }
 }
 
 .context-menu {
     position: absolute;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-image: linear-gradient(120deg, rgb(22, 22, 22), rgb(20, 20, 20));
+    border: 1px solid #202020;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -96,8 +61,8 @@ body {
 }
 
 .context-menu button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #cecece;
+    color: #353535;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
